@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sufiyan976/MyTextEditor/static/css/main.073c9b0a.css",
-    "main.js": "/sufiyan976/MyTextEditor/static/js/main.2c278a6b.js",
-    "static/js/787.bf807a48.chunk.js": "/sufiyan976/MyTextEditor/static/js/787.bf807a48.chunk.js",
-    "static/media/img1.jpg": "/sufiyan976/MyTextEditor/static/media/img1.7ffbebddb2f2b7bb6024.jpg",
-    "index.html": "/sufiyan976/MyTextEditor/index.html",
-    "main.073c9b0a.css.map": "/sufiyan976/MyTextEditor/static/css/main.073c9b0a.css.map",
-    "main.2c278a6b.js.map": "/sufiyan976/MyTextEditor/static/js/main.2c278a6b.js.map",
-    "787.bf807a48.chunk.js.map": "/sufiyan976/MyTextEditor/static/js/787.bf807a48.chunk.js.map"
+    "main.css": "/MyTextEditor/static/css/main.073c9b0a.css",
+    "main.js": "/MyTextEditor/static/js/main.7ae1e4c7.js",
+    "static/js/787.bf807a48.chunk.js": "/MyTextEditor/static/js/787.bf807a48.chunk.js",
+    "static/media/img1.jpg": "/MyTextEditor/static/media/img1.7ffbebddb2f2b7bb6024.jpg",
+    "index.html": "/MyTextEditor/index.html",
+    "main.073c9b0a.css.map": "/MyTextEditor/static/css/main.073c9b0a.css.map",
+    "main.7ae1e4c7.js.map": "/MyTextEditor/static/js/main.7ae1e4c7.js.map",
+    "787.bf807a48.chunk.js.map": "/MyTextEditor/static/js/787.bf807a48.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.2c278a6b.js"
+    "static/js/main.7ae1e4c7.js"
   ]
 }
