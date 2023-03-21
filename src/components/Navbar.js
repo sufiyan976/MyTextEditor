@@ -17,10 +17,10 @@ export default function Navbar(props) {
 
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item ">
-            <Link className="nav-link " aria-current="page" to="/home">{props.home}</Link>
+            <Link className="nav-link mx-1 " aria-current="page" to="/home">{props.home}</Link>
           </li>
           <li className="nav-item d-sm-block d-none">
-            <Link className="nav-link" to="/about">{props.about}</Link>
+            <Link className="nav-link mx-1" to="/about">{props.about}</Link>
           </li>
       
         </ul>
@@ -31,7 +31,7 @@ export default function Navbar(props) {
 </div>
 
       </div>
-      <ul className="navbar-nav pl-5 mb-lg-0 d-sm-none"  >
+      <ul className="navbar-nav pl- mx-1 mb-lg-0 d-sm-none"  >
         
     <li className="nav-item">
             <Link className="nav-link" to="/about">About-Us</Link>
