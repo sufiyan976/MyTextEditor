@@ -134,7 +134,7 @@ const oneline =()=>{
     },1500);
     setinfo(<div className="collapse" id="collapseExample">
     <div className="card card-body">
-      Your Text Is Alrread In Same Line, To Use This Feature You Have To Add Text In Multiple Lines And Try Again.
+      Your Text Is Already In Same Line, To Use This Feature You Have To Add Text In Multiple Lines And Try Again.
     </div>
   </div>)
     
