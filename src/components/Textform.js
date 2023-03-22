@@ -15,6 +15,11 @@ const [info1, setinfo1] = useState(
     i am info
   </div>
   )
+  const [info2, setinfo2] = useState( 
+    <div className="card card-body invisible text-center position" hidden style={{width: '300px'}}>
+      i am info
+    </div>
+    )
 
 
 
@@ -32,7 +37,7 @@ const toupper =()=>{
         value : null
         
       })
-    },1500);
+    },1800);
     
   }
   else{
@@ -49,7 +54,7 @@ const toupper =()=>{
         value : null
         
       })
-    },1500);
+    },1800);
   }
 }
 
@@ -77,7 +82,7 @@ const tolower =()=>{
         value : null
         
       })
-    },1500);
+    },1800);
    
 }
 
@@ -106,7 +111,7 @@ const addspace =()=>{
       value : null
       
     })
-  },1500);
+  },1800);
 }  
 
 // to oneline
@@ -131,10 +136,10 @@ const oneline =()=>{
         value : null
         
       })
-    },1500);
+    },1800);
     setinfo(<div className="collapse" id="collapseExample">
     <div className="card card-body">
-      Your Text Is Already In Same Line, To Use This Feature You Have To Add Text In Multiple Lines And Try Again.
+      To Use This Feature You Have To Add Text In Multiple Lines And Try Again.
     </div>
   </div>)
     
@@ -153,7 +158,7 @@ const oneline =()=>{
       value : null
       
     })
-  },1500);
+  },1800);
   setinfo('')
   }
 }  
@@ -174,7 +179,7 @@ const tocapital =()=>{
         value : null
         
       })
-    },1500);
+    },1800);
   }
   else{
     let result = toTitleCase(text);
@@ -190,7 +195,7 @@ const tocapital =()=>{
         value : null
         
       })
-    },1500);
+    },1800);
   }
 }  
 
@@ -210,7 +215,7 @@ const totitle =()=>{
         value : null
         
       })
-    },1500);
+    },1800);
   }
   else{
     settext(text.charAt(0).toUpperCase() + text.slice(1).toLowerCase());
@@ -225,7 +230,7 @@ const totitle =()=>{
         value : null
         
       })
-    },1500);
+    },1800);
   }
 }
 
@@ -252,7 +257,7 @@ const titlepro =()=>{
       value : null
       
     })
-  },1500);
+  },1800);
     setinfo1(<div className="collapse" id="collapseExample1">
     <div className="card card-body">
       To Use This Feature You Have To Add Text In Multiple Lines And Try Again.
@@ -273,7 +278,7 @@ setTimeout(() => {
     value : null
     
   })
-},1500);
+},1800);
 setinfo1("")
   }
 }  
@@ -293,7 +298,7 @@ function copyToClipboard() {
           value : null
           
         })
-      },1500);
+      },1800);
   }
   else{
     props.alert({
@@ -307,7 +312,7 @@ function copyToClipboard() {
         value : null
         
       })
-    },1500);;
+    },1800);;
   }
 }
 
@@ -325,7 +330,7 @@ const toclear=()=>{
         value : null
         
       })
-    },1500);;
+    },1800);;
 }
 
 // onchange event for textarea
@@ -348,7 +353,7 @@ props.alert({
         value : null
         
       })
-    },1500);;
+    },1800);;
 }
 const removeallspace=()=>{
   
@@ -364,7 +369,7 @@ props.alert({
         value : null
         
       })
-    },1500);;
+    },1800);;
 }
 
 // text to multiple lines
@@ -381,7 +386,12 @@ const tomultipleline=()=>{
         value : null
         
       })
-    },1500);;
+    },1800);;
+    setinfo2(<div className="collapse" id="collapseExample2">
+    <div className="card card-body">
+      Please Add Some Spaces Between Each Word.
+    </div>
+  </div>)
   }
   else{
   settext(text.replace(/\s+|\s+$/g,"\n"))
@@ -396,7 +406,8 @@ props.alert({
         value : null
         
       })
-    },1500);;
+    },1800);;
+    setinfo2("")
 
   }
 }
@@ -445,16 +456,17 @@ let second = tofixed.toFixed(2)
     {info1}
     <button disabled={text.length === 0} type="button" onClick={addspace}  className="btn btn-primary mx-1 my-1">Add Space</button> 
     <button disabled={text.length === 0} type="button" onClick={removespace}  className="btn btn-primary mx-1 my-1">Remove Space</button>
-    <button disabled={text.length === 0} type="button" onClick={removeallspace}  className="btn btn-primary mx-1 my-1">Remove AllSpace</button>
+    <button disabled={text.length === 0} type="button" onClick={removeallspace}  className="btn btn-primary mx-1 my-1">Remove All Space</button>
     <button disabled={text.length === 0} type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onClick={oneline}  className="btn btn-primary mx-1 my-1">To Single-Line</button>
     {info}
-    <button disabled={text.length === 0}  type="button" onClick={tomultipleline}  className="btn btn-primary mx-1 my-1">To Multi-Line</button>
+    <button disabled={text.length === 0}  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" onClick={tomultipleline}  className="btn btn-primary mx-1 my-1">To Multi-Line</button>
+    {info2}
     <button disabled={text.length === 0} type="button" onClick={copyToClipboard}  className="btn btn-primary mx-1 my-1">Copy Text</button>
     <button disabled={text.length === 0} type="button" onClick={toclear}  className="btn btn-primary mx-1 my-1">Clear</button>
     </div>
     <div>
 
-    <p>{text.split(/\s+/).filter(function(n) { return n !== '' }).length} Words And {text.length} Characters <br />
+    <p>{text.split(/\s+/).filter(function(n) { return n !== '' }).length} Words And {text.replace(/\s/g, "").length} Characters <br />
     {Minute} Minutes {second} Seconds To Read</p>
     <h2>Preview Here</h2>
     <p className='text-wrap text-justify  text-break' >{text.length===0? 'No Text To Preview':text }</p>
