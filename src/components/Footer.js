@@ -15,7 +15,7 @@ export default function Footer(props) {
   {/* <!-- Copyright --> */}
   <div className="text-center p-1 bg-"  > 
     © 2023Copyright:
-    <Link className=""style={{color:props.style.color==='black'?'white':'black',textDecoration: 'none'}} > mytexteditor.com All rights reserved.</Link>
+    <Link className=""style={{color:props.style.color==='black'?'white':'black',textDecoration: 'none'}} > sufytexteditor.com All rights reserved.</Link>
   </div>
   {/* <!-- Copyright --> */}
 </footer>
