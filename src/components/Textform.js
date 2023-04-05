@@ -137,7 +137,7 @@ const oneline =()=>{
         
       })
     },1800);
-    setinfo(<div className="collapse" id="collapseExample">
+    setinfo(<div className="collapse" style={{color:props.textarea.backgroundColor === "white"?'black':'black'}} id="collapseExample">
     <div className="card card-body">
       To Use This Feature You Have To Add Text In Multiple Lines And Try Again.
     </div>
@@ -258,7 +258,7 @@ const titlepro =()=>{
       
     })
   },1800);
-    setinfo1(<div className="collapse" id="collapseExample1">
+    setinfo1(<div className="collapse" style={{color:props.textarea.backgroundColor === "white"?'black':'black'}} id="collapseExample1">
     <div className="card card-body">
       To Use This Feature You Have To Add Text In Multiple Lines And Try Again.
     </div>
@@ -387,7 +387,7 @@ const tomultipleline=()=>{
         
       })
     },1800);;
-    setinfo2(<div className="collapse" id="collapseExample2">
+    setinfo2(<div className="collapse" style={{color:props.textarea.backgroundColor === "white"?'black':'black'}} id="collapseExample2">
     <div className="card card-body">
       Please Add Some Spaces Between Each Word.
     </div>
